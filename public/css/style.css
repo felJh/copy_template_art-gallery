@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+h2 {
+  font-family: "Oswald";
+  font-size: 2.2rem;
+  margin: 0;
+}
+h2 span {
+  font-weight: 400;
+}
+
+.read-more {
+  font-weight: 600;
+  font-size: 1.2rem !important;
+  letter-spacing: -0.02em;
+}
+
+.s1 {
+  width: 100%;
+  padding: 1rem 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.s1-grp {
+  text-align: right;
+  width: 50%;
+}
+.s1-grp p {
+  line-height: 1.4rem;
+}
+
+.social-media i {
+  color: black;
+}
+
+img {
+  width: 10%;
+}
+
+.gallery-flex {
+  width: 90%;
+  height: 45vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.s2-div1,
+.s2-div2,
+.s2-div4,
+.gallery,
+.s2-div5 {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery i {
+  font-size: 2.4rem;
+}
+.gallery p {
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+.s2-div1 {
+  background-image: url(../../../public/img/portrait1.jpeg);
+  background-size: 180%;
+}
+
+.s2-div2 {
+  background-image: url(../../../public/img/couronne.jpeg);
+  background-size: 180%;
+}
+
+.s2-div4 {
+  background-image: url(../../../public/img/salon.jpeg);
+  background-size: 180%;
+}
+
+.s2-div5 {
+  background-image: url(../../../public/img/pagne.jpeg);
+  background-size: 144%;
+}
+
+.s3 {
+  background-image: url(../../../public/img/bandeau-barbe.png);
+  background-position: -30%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vw;
+}
+
+.s3-txt {
+  z-index: 2;
+  padding: 5rem 0 5rem 5rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+.s3-txt p {
+  line-height: 1.4em;
+  margin: 1rem 4rem 0 0;
+  font-weight: 300;
+}
+
+.s3-square {
+  position: absolute;
+  margin-top: 2%;
+  left: 45%;
+  height: 18vw;
+  width: 14vw;
+  background-color: #FEA300;
+  z-index: 0s;
+}
+
+.s4 {
+  margin: 0 0 0 5%;
+  width: 95%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 0.8fr 0.8fr;
+  grid-template-rows: 32vw 32vw;
+  column-gap: 0.6rem;
+  row-gap: 0.6rem;
+}
+
+.s4-img1, .s4-img2, .s4-img3 {
+  background-position: center;
+}
+
+.s4-img1 {
+  grid-column: 1;
+  grid-row: 1;
+  background-image: url(../../../public/img/micro-chelou.jpeg);
+  background-size: 100%;
+}
+
+.s4-img2 {
+  background-size: 200%;
+  grid-column: 2;
+  grid-row: 1;
+  background-image: url(../../../public/img/vieux-couple.jpeg);
+}
+
+.s4-img3 {
+  background-image: url(../../../public/img/peintre.jpeg);
+  grid-column: 1/span 2;
+  grid-row: 2;
+  background-size: 120%;
+}
+
+.s4-txt {
+  grid-column: 3/span 4;
+  grid-row: 1/span 2;
+  padding-left: 2rem;
+}
+.s4-txt p {
+  line-height: 1.6em;
+  font-weight: 300;
+  padding: 2rem 0;
+}
+
+.s4-square-contain {
+  grid-column: 4/span 5;
+  grid-row: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.s4-square {
+  height: 18vw;
+  width: 14vw;
+  background-color: #FEA300;
+  z-index: -1;
+}
+
+.s5 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../public/img/bandeau-pigeon.png);
+  background-position: center;
+  background-size: 110%;
+}
+
+.s5-grp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 60%;
+  padding: 4rem 5%;
+}
+.s5-grp h2 {
+  line-height: 1.2em;
+  padding-left: 0.6rem;
+}
+.s5-grp h2 span {
+  display: block;
+}
+.s5-grp p {
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+
+.s5-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.s5-img1, .s5-img2 {
+  width: 50%;
+  height: 100%;
+}
+
+.s5-img1 {
+  background-image: url("../../../public/img/voiture.jpeg");
+  background-size: 110%;
+}
+
+.s5-img2 {
+  background-image: url("../../../public/img/fenetre.jpeg");
+  background-size: 160%;
+  background-position: center;
+}
+
+header {
+  background-image: url(../../../public/img/head-img.png);
+  background-position: center;
+  background-size: 110%;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.head-txt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 50%;
+  padding: 0 6%;
+}
+.head-txt p {
+  line-height: 1.6rem;
+  margin: 1.4rem 0;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 0.2rem;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 3.4rem;
+  line-height: 4rem;
+}
+h1 span {
+  display: block;
+  font-weight: 700;
+}
+
+.logo-g {
+  position: absolute;
+  width: 6%;
+  right: 2.2rem;
+  bottom: 1.6rem;
+}
+
+.read-more {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.02rem;
+}
+
+/*# sourceMappingURL=style.css.map */

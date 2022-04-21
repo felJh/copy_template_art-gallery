@@ -1,0 +1,47 @@
+@import '../variables';
+header {
+    background-image: url(../../../public/img/head-img.png);
+    
+    background-position: center;
+    background-size: 110%;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    
+
+}
+.head-txt {
+    height: 100%;
+    @include flexCol(center, baseline);
+    width: 50%;
+    padding: 0 6%;
+
+    p{
+        line-height: 1.6rem;
+        margin: 1.4rem 0;
+    }
+}
+h1 {
+    margin: 0;
+    letter-spacing: .2rem;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 4rem;
+
+    span {
+        display: block;
+        font-weight: 700;
+    }
+}
+.logo-g {
+    position: absolute;
+    width: 6%;
+    right:  2.2rem;
+    bottom: 1.6rem;
+}
+.read-more {
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: -.02rem;
+}
