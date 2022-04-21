@@ -24,39 +24,49 @@ h2 {
         font-weight: 400;
     }
 }
+section:nth-child(1),
+section:nth-child(2),
+section:nth-child(4),
+section:nth-child(6),
+section:nth-child(7) {
+    width: 87%;
+    margin: auto;
+}
+.s1, .s6 {
+    width: 100%;
+    padding: 1rem;
+}
+.s1-grp, .s6-grp {
+    line-height: 1.6em;
+    width: 50%;
+}
+.s1-grp i:nth-child(2), .s1-grp i:nth-child(3),
+.s1-grp i:nth-child(4), .s1-grp i:nth-child(5),
+.s6-grp i:nth-child(2), .s6-grp i:nth-child(3),
+.s6-grp i:nth-child(4), .s6-grp i:nth-child(5) {
+    font-size: 1.1rem;
+    margin: 1.5rem .5rem .5rem;
+}
+
 .read-more {
     font-weight: 600;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     letter-spacing: -.02em;
 }
 .s1 {
-    width: 100%;
-    padding: 1rem 6%;
     @include flex(flex-end, center);
 }
 .s1-grp {
     text-align: right;
-    width: 50%;
-
-    p {
-        line-height: 1.4rem;
-    }
-}
-.social-media i {
-    color: black;
-}
-img {
-    width: 10%;
 }
 
 // SECTION2  SECTION2  SECTION2  
 
 .gallery-flex {
-    width: 90%;
-    height: 45vw;
-    margin: auto;
+    height: 25vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
 }
 
 .s2-div1,
@@ -82,9 +92,9 @@ img {
         font-size: 2.4rem;
     }
     p{
-        font-size: .8rem;
-        font-weight: 900;
-        letter-spacing: .1rem;
+        font-size: 1rem;
+        font-weight: 77700;
+        
     }
 }
 .s2-div1 {
@@ -104,7 +114,6 @@ img {
 // SECTION3    SECTION3    SECTION3    
 
 .s3 {
-
     background-image: url(../../../public/img/bandeau-barbe.png);
     background-position: -30%;
     background-size: 110%;
@@ -138,11 +147,10 @@ img {
 
 .s4 {
     margin: 0 0 0 5%;
-    width: 95%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1.3fr 1.3fr 0.8fr 0.8fr;
-    grid-template-rows: 32vw 32vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25vw 30vw;
     column-gap: .6rem;
     row-gap:    .6rem;
 }
@@ -170,7 +178,7 @@ img {
 .s4-txt {
     grid-column: 3 /span 4;
     grid-row: 1 /span 2;
-    padding-left: 2rem;
+    padding: 0 2rem 0 2rem;
     p {
         line-height: 1.6em;
         font-weight: 300;
@@ -184,8 +192,8 @@ img {
     @include flex (flex-end, flex-end);
 }
 .s4-square {
-    height: 18vw;
-    width:   14vw;
+    height: 12vw;
+    width:  10vw;
     background-color: $orange;
     z-index: -1;
 }
@@ -238,3 +246,49 @@ img {
     background-position: center;
 
 }
+
+//SECTION6     SECTION6     SECTION6      
+
+.s6 {
+    @include flex(flex-start, center);
+}
+
+
+// SECTION7    SECTION7    SECTION7    
+.s7-div1,
+.s7-div2,
+.s7-div4,
+.s7-div5 {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+.s7-div1 {
+    background-image: url(../../../public/img/contreplongée2.jpeg);
+    background-size: 220%;
+} .s7-div2 {
+    background-image: url(../../../public/img/fille-soda.jpeg);
+    background-size: 135%;
+} .s7-div4 {
+    background-image: url(../../../public/img/contreplongée1.jpeg);
+    background-size: 200%;
+} .s7-div5 {
+    background-image: url(../../../public/img/fusée.jpg);
+    background-size: 120%;
+}
+
+// FOOTER     FOOTER     FOOTER     FOOTER      
+
+footer {
+    @include flex (center, center);
+    background-color: black;
+    color: white;
+    font-size: .7rem;
+    padding: 1em;
+}
+.foot-span {
+    text-decoration: underline;
+    color: bisque;
+}
+
