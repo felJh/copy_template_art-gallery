@@ -1,0 +1,11 @@
+footer {
+    @include flex (center, center);
+    background-color: black;
+    color: white;
+    font-size: .7rem;
+    padding: 1em;
+}
+.foot-span {
+    text-decoration: underline;
+    color: bisque;
+}

@@ -1,0 +1,269 @@
+//          G R O U P E S
+//          G R O U P E S
+//          G R O U P E S
+section {
+    margin-top:    4rem !important;
+    margin-bottom: 4rem !important;
+}
+
+section:nth-child(1),
+section:nth-child(2),
+section:nth-child(4),
+section:nth-child(6),
+section:nth-child(7) {
+    width: 87%;
+    margin: auto;
+} 
+.s1, .s6 {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.s1-grp, .s6-grp {
+    line-height: 1.6em;
+    margin: 0;
+    width: 50%;
+}
+
+//F O N T A W E S O M E   S O C I A L - M E D I A
+.s1-grp i:nth-child(2), .s1-grp i:nth-child(3),
+.s1-grp i:nth-child(4), .s1-grp i:nth-child(5),
+.s6-grp i:nth-child(2), .s6-grp i:nth-child(3),
+.s6-grp i:nth-child(4), .s6-grp i:nth-child(5) {
+    font-size: 1.1rem;
+    margin: 1rem .5rem;
+}
+
+// S E C T I O N  2   &    7
+.gallery-flex {
+    height: 25vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
+}
+.s7-div1, .s7-div2, .s7-div4,
+.s7-div5, .s2-div1, .s2-div2,
+.s2-div4, .gallery, .s2-div5 {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+.gallery{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width:  100%;
+    @include flexCol(center, center);
+    i {
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 700;
+        
+    }
+}
+
+//          S E C T I O N    1
+//          S E C T I O N    1
+//          S E C T I O N    1
+
+
+.s1 {
+    @include flex(flex-end, center);
+}
+.s1-grp {
+    text-align: right;
+}
+
+//          S E C T I O N    2
+//          S E C T I O N    2
+//          S E C T I O N    2
+
+.s2-div1 {
+    background-image: url(../../../public/img/portrait1.jpeg);
+    background-size: 180%;
+} .s2-div2 {
+    background-image: url(../../../public/img/couronne.jpeg);
+    background-size: 180%;
+} .s2-div4 {
+    background-image: url(../../../public/img/salon.jpeg);
+    background-size: 180%;
+} .s2-div5 {
+    background-image: url(../../../public/img/pagne.jpeg);
+    background-size: 144%;
+}
+
+//          S E C T I O N    3
+//          S E C T I O N    3
+//          S E C T I O N    3
+
+.s3 {
+    background-image: url(../../../public/img/bandeau-barbe.png);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vw;
+}
+.s3-txt {
+    z-index: 2;
+    padding: 10% 0 0  5rem;
+    width: 50%;
+    height: 100%;
+    p {
+        line-height: 1.4em;
+        margin: 1rem 4rem 0 0;
+        font-size: .9rem;
+        font-weight: 300;
+    }
+}
+.s3-square {
+    position: absolute;
+    margin-top: 1.6rem;
+    left: 45%;
+    height: 14vw;
+    width:  14vw;
+    background-color: $orange;
+
+    z-index: 0;
+}
+
+
+//          S E C T I O N    4
+//          S E C T I O N    4
+//          S E C T I O N    4
+
+.s4 {
+    margin: 0 0 0 5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25vw 30vw;
+    column-gap: .6rem;
+    row-gap:    .6rem;
+}
+.s4-img1, .s4-img2, .s4-img3 {
+    background-position: center;
+}
+.s4-img1 {
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(../../../public/img/micro-chelou.jpeg);
+    background-size: 100%;
+}
+.s4-img2 {
+    background-size: 200%;
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url(../../../public/img/vieux-couple.jpeg);
+}
+.s4-img3 {
+    background-image: url(../../../public/img/peintre.jpeg);
+    grid-column: 1 /span 2;
+    grid-row: 2;
+    background-size: 120%;
+}
+.s4-txt {
+    grid-column: 3 /span 4;
+    grid-row: 1 /span 2;
+    padding: 0 2rem 0 2rem;
+    p {
+        line-height: 1.6em;
+        font-weight: 300;
+        padding: 2rem 0;
+    }
+}
+
+.s4-square-contain {
+    grid-column: 4 /span 5;
+    grid-row: 2;
+    @include flex (flex-end, flex-end);
+}
+.s4-square {
+    height: 12vw;
+    width:  10vw;
+    background-color: $orange;
+    z-index: -1;
+}
+
+
+//          S E C T I O N    5
+//          S E C T I O N    5
+//          S E C T I O N    5
+
+.s5 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../public/img/bandeau-pigeon.png);
+    background-position: center;
+    background-size: 110%;
+}
+.s5-grp {
+    @include flexCol (center, baseline);
+    width: 60%;
+    padding: 4rem 5%;
+    h2 {
+        line-height: 1.2em;
+        padding-left: .6rem;
+        span {
+            display: block;
+        }
+    }
+    p {
+        padding: .6rem;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.6em;
+        letter-spacing: .1em;
+    }
+}
+.s5-imgs {
+    @include flex (center, center);
+    height: 50vh;
+    width: 100%;
+}
+.s5-img1, .s5-img2 {
+    width: 50%;
+    height: 100%;
+}
+.s5-img1 {
+    background-image: url('../../../public/img/voiture.jpeg');
+    background-size: 110%;
+}
+.s5-img2 {
+    background-image: url('../../../public/img/fenetre.jpeg');
+    background-size: 160%;
+    background-position: center;
+
+}
+
+
+//          S E C T I O N    6
+//          S E C T I O N    6
+//          S E C T I O N    6
+
+.s6 {
+    @include flex(flex-start, center);
+}
+
+
+//          S E C T I O N    7
+//          S E C T I O N    7
+//          S E C T I O N    7
+
+.s7-div1 {
+    background-image: url(../../../public/img/contreplongée2.jpeg);
+    background-size: 220%;
+} .s7-div2 {
+    background-image: url(../../../public/img/fille-soda.jpeg);
+    background-size: 135%;
+} .s7-div4 {
+    background-image: url(../../../public/img/contreplongée1.jpeg);
+    background-size: 200%;
+} .s7-div5 {
+    background-image: url(../../../public/img/fusée.jpg);
+    background-size: 120%;
+}

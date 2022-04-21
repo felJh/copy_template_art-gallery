@@ -1,19 +1,16 @@
-@import '../variables';
 header {
     background-image: url(../../../public/img/head-img.png);
-    
     background-position: center;
     background-size: 110%;
-    margin: 0;
     width: 100%;
     height: 100vh;
     
 
 }
 .head-txt {
-    height: 100%;
+    height: 70%;
     @include flexCol(center, baseline);
-    width: 50%;
+    width: 60%;
     padding: 0 6%;
 
     p{
